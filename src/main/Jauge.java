@@ -84,4 +84,8 @@ public class Jauge {
     public void setType(TypeJauge type) {
         this.type = type;
     }
+
+    public boolean valeurHorsLimite(){
+        return (this.getValeur()<=0 || this.getValeur()>=50);
+    }
 }
