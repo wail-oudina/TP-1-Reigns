@@ -1,5 +1,8 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Représente un personnage ayant un nom, un genre, et des jauges de Clergé, Peuple, Armée et Finances.
  *
@@ -15,22 +18,14 @@ public class Personnage {
      * Le genre du personnage
      */
     protected Genre genre;
+
+
     /**
-     * La jauge de Clergé
-     */
-    protected Jauge jaugeClerge;
-    /**
-     * La jauge de Peuple
-     */
-    protected Jauge jaugePeuple;
-    /**
-     * La jauge d'Armée
-     */
-    protected Jauge jaugeArmee;
-    /**
-     * La jauge de Finances
-     */
-    protected Jauge jaugeFinance;
+     *  Tableau de jauges
+     *
+     * */
+    protected List<Jauge> jauges;
+
 
     /**
      * Crée un nouveau personnage avec le nom et le genre spécifiés,
@@ -42,22 +37,24 @@ public class Personnage {
     public Personnage(String nom, Genre genre) {
         this.nom = nom;
         this.genre = genre;
+        this.jauges = new ArrayList<Jauge>();
+        for ( int i = 0 ; i < TypeJauge.values().length;i++){
+            Jauge j = new Jauge(TypeJauge.values()[i].toString(),  15 + (int)(Math.random() * (35 - 15)) );
+            j.setType(TypeJauge.values()[i]);
+            this.jauges.add( j );
+        }
 
-        // Initialisation des jauges entre 15 et 35 points
-        jaugeClerge = new Jauge("Clergé", 15 + (int)(Math.random() * (35 - 15)));
-        jaugePeuple = new Jauge("Peuple", 15 + (int)(Math.random() * (35 - 15)));
-        jaugeArmee = new Jauge("Armée", 15 + (int)(Math.random() * (35 - 15)));
-        jaugeFinance = new Jauge("Finances", 15 + (int)(Math.random() * (35 - 15)));
     }
 
     /**
      * Affiche les jauges de Clergé, Peuple, Armée et Finances du personnage.
      */
     public void AfficheJauges() {
-        afficheJauge(jaugeClerge);
-        afficheJauge(jaugePeuple);
-        afficheJauge(jaugeArmee);
-        afficheJauge(jaugeFinance);
+
+        for ( Jauge jauge: jauges) {
+            afficheJauge(jauge);
+        }
+
         System.out.println();
     }
 
@@ -67,18 +64,13 @@ public class Personnage {
      * @return true si le jeu est fini, false sinon
      */
     public boolean finDuJeu(){
-        if(jaugeClerge.getValeur()<=0
-                || jaugeClerge.getValeur()>=50
-                || jaugePeuple.getValeur()<=0
-                || jaugePeuple.getValeur()>=50
-                || jaugeArmee.getValeur()<=0
-                || jaugeArmee.getValeur()>=50
-                || jaugeFinance.getValeur()<=0
-                || jaugeFinance.getValeur()>=50){
-            return true;
-        }else{
-            return false;
+
+        for ( Jauge jauge : jauges ) {
+            if (jauge.valeurHorsLimite()){
+                return true;
+            }
         }
+        return false;
     }
 
     /**
@@ -135,61 +127,17 @@ public class Personnage {
      * Retourne la jauge du clergé
      * @return la jauge du clergé
      */
-    public Jauge getJaugeClerge() {
-        return jaugeClerge;
-    }
 
-    /**
-     * Modifie la jauge du clergé
-     * @param jaugeClerge La nouvelle jauge du clergé
-     */
-    public void setJaugeClerge(Jauge jaugeClerge) {
-        this.jaugeClerge = jaugeClerge;
+    public Jauge getJauge(TypeJauge type){
+        for ( int i =0;i< jauges.size() ;i++){
+            if (jauges.get(i).type.toString().equals(type.toString()) ){
+                return jauges.get(i);
+            }
+        }
+        return null;
     }
+    public void setJauge(TypeJauge type,Jauge jauge){
 
-    /**
-     * Retourne la jauge du peuple
-     * @return la jauge du peuple
-     */
-    public Jauge getJaugePeuple() {
-        return jaugePeuple;
-    }
-    /**
-     * Modifie la jauge du peuple
-     * @param jaugePeuple La nouvelle jauge du peuple
-     */
-    public void setJaugePeuple(Jauge jaugePeuple) {
-        this.jaugePeuple = jaugePeuple;
-    }
-
-    /**
-     * Retourne la jauge de l'armée
-     * @return la jauge de l'armée
-     */
-    public Jauge getJaugeArmee() {
-        return jaugeArmee;
-    }
-    /**
-     * Modifie la jauge de l'armée
-     * @param jaugeArmee La nouvelle jauge de l'armée
-     */
-    public void setJaugeArmee(Jauge jaugeArmee) {
-        this.jaugeArmee = jaugeArmee;
-    }
-
-    /**
-     * Retourne la jauge des finances
-     * @return la jauge des finances
-     */
-    public Jauge getJaugeFinance() {
-        return jaugeFinance;
-    }
-    /**
-     * Modifie la jauge des finances
-     * @param jaugeFinance La nouvelle jauge des finances
-     */
-    public void setJaugeFinance(Jauge jaugeFinance) {
-        this.jaugeFinance = jaugeFinance;
     }
 
 }
