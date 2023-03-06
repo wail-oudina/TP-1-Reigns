@@ -22,7 +22,6 @@ public class Personnage {
 
     /**
      *  Tableau de jauges
-     *
      * */
     protected List<Jauge> jauges;
 
@@ -37,7 +36,7 @@ public class Personnage {
     public Personnage(String nom, Genre genre) {
         this.nom = nom;
         this.genre = genre;
-        this.jauges = new ArrayList<Jauge>();
+        this.jauges = new ArrayList<>();
         for ( int i = 0 ; i < TypeJauge.values().length;i++){
             Jauge j = new Jauge(TypeJauge.values()[i].toString(),  15 + (int)(Math.random() * (35 - 15)) );
             j.setType(TypeJauge.values()[i]);
@@ -92,7 +91,7 @@ public class Personnage {
         resultat.append("] ");
         // affichage du nom
         resultat.append(jauge.getNom());
-        System.out.println(resultat.toString());
+        System.out.println(resultat);
     }
 
     /**
@@ -129,9 +128,9 @@ public class Personnage {
      */
 
     public Jauge getJauge(TypeJauge type){
-        for ( int i =0;i< jauges.size() ;i++){
-            if (jauges.get(i).type.toString().equals(type.toString()) ){
-                return jauges.get(i);
+        for (Jauge jauge : jauges) {
+            if (jauge.type.toString().equals(type.toString())) {
+                return jauge;
             }
         }
         return null;
