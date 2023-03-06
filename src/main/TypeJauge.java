@@ -7,17 +7,23 @@ public enum TypeJauge {
     /**
      * Jauge du clergé
      */
-    CLERGE,
+    CLERGE("Clergé"),
     /**
      * Jauge du peuple
      */
-    PEUPLE,
+    PEUPLE("Peuple"),
     /**
      * Jauge de l'armée
      */
-    ARMEE,
+    ARMEE("Armée"),
     /**
      * Jauge des finances
      */
-    FINANCE
+    FINANCE("Finances");
+
+    public String label;
+
+    TypeJauge(String label) {
+        this.label = label;
+    }
 }
