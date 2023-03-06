@@ -1,5 +1,6 @@
 package main;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,8 +28,9 @@ public class Reigns {
      *
      * @param args les arguments de la ligne de commande
      */
-    public static void main(String[] args){
+    public static void main(String[] args)  {
 
+        InitializerQuestions initializerQuestions = new InitializerQuestions("questions.txt");
         // début du jeu
         System.out.println("Bienvenue sur Reigns");
 
