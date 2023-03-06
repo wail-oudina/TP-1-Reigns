@@ -62,7 +62,7 @@ public class Effet {
         this.valeur = valeur;
     }
     protected String afficheEffet() {
-        String result = "Jauge "+type.toString()+" : ";
+        String result = "Jauge "+"'"+type.label+"'"+" : ";
         result += (valeur>0) ? "+" : "";
         result += valeur;
         result += " ; ";

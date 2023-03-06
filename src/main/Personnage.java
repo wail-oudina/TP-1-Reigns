@@ -38,7 +38,7 @@ public class Personnage {
         this.genre = genre;
         this.jauges = new ArrayList<>();
         for ( int i = 0 ; i < TypeJauge.values().length;i++){
-            Jauge j = new Jauge(TypeJauge.values()[i].toString(),  15 + (int)(Math.random() * (35 - 15)) );
+            Jauge j = new Jauge(TypeJauge.values()[i].label,  15 + (int)(Math.random() * (35 - 15)) );
             j.setType(TypeJauge.values()[i]);
             this.jauges.add( j );
         }

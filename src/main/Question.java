@@ -21,22 +21,6 @@ public class Question {
      */
     protected String question;
     protected Map<DirectionEffet,String> textesEffets;
-    /**
-     * l'effet de la réponse de gauche
-     */
-    protected String effetGauche;
-    /**
-     * l'effet de la réponse de droite
-     */
-    protected String effetDroite;
-    /**
-     * les effets sur les jauges pour la réponse de gauche
-     */
-    protected List<Effet> effetJaugeGauche;
-    /**
-     * les effets sur les jauges pour la réponse de droite
-     */
-    protected List<Effet> effetJaugeDroite;
 
     protected List<Effet> effets;
 
@@ -54,8 +38,7 @@ public class Question {
         this.question = question;
         this.textesEffets = new TreeMap<>();
         this.effets = new ArrayList<>();
-        this.effetJaugeDroite = new ArrayList<>();
-        this.effetJaugeGauche = new ArrayList<>();
+
     }
 
     public void ajouteTexteEffet(DirectionEffet directionEffet,String texteEffet) {
@@ -75,7 +58,7 @@ public class Question {
         result += "\n";
 
         for ( DirectionEffet direction : DirectionEffet.values() ) {
-            result += "Effet "+direction.toString()+" : "+ afficheEffets(direction)+"\n";
+            result += "Effet "+direction.label+" : "+ afficheEffets(direction)+"\n";
         }
 
         System.out.println(result);

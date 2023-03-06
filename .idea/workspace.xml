@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()">
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Ajout de labels dans les Enums , pour faciliter l'affichage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Effet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Effet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Personnage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -139,7 +141,28 @@
       <option name="project" value="LOCAL" />
       <updated>1678105684968</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Suppression de méthodes inutiles">
+      <created>1678108124834</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678108124834</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Ajout de la classe Reponse">
+      <created>1678109722220</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678109722220</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ajout de labels dans les Enums , pour faciliter l'affichage">
+      <created>1678110107479</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678110107479</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +185,10 @@
     <MESSAGE value="Modification de la classe Effet et adaptation de la classe Question par rapport aux modifications" />
     <MESSAGE value="Ajout d'un attribut directionEffet dans la classe Effet,&#10;ajout d'un Enum DirectionEffet&#10;ajout d'un methode Question.ajouteTexteEffet()&#10;adaptation du code dans Reigns.java" />
     <MESSAGE value="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()" />
+    <MESSAGE value="Suppression de méthode inutiles" />
+    <MESSAGE value="Suppression de méthodes inutiles" />
+    <MESSAGE value="Ajout de la classe Reponse" />
+    <MESSAGE value="Ajout de labels dans les Enums , pour faciliter l'affichage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de labels dans les Enums , pour faciliter l'affichage" />
   </component>
 </project>
