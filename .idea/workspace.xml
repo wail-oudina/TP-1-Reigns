@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Ajout de labels dans les Enums , pour faciliter l'affichage">
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Effet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Effet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Personnage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/DirectionEffet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DirectionEffet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678110107479</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)">
+      <created>1678110288834</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678110288834</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +196,7 @@
     <MESSAGE value="Suppression de méthodes inutiles" />
     <MESSAGE value="Ajout de la classe Reponse" />
     <MESSAGE value="Ajout de labels dans les Enums , pour faciliter l'affichage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de labels dans les Enums , pour faciliter l'affichage" />
+    <MESSAGE value="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)" />
   </component>
 </project>
