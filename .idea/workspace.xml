@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Modification de la classe Personnage ( et Question)  , de sorte qu'on puisse ajouter une infinité de jauges dans le futur">
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Optimisation de la méthode Personnage.afficheJauge() , et Personnage.getJauge()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Personnage.java" afterDir="false" />
     </list>
@@ -92,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678033165162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Optimisation de la méthode Personnage.afficheJauge()">
+      <created>1678093211548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678093211548</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Optimisation de la méthode Personnage.afficheJauge() , et Personnage.getJauge()">
+      <created>1678093335262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678093335262</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +126,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout fonction qui verifie si les valeurs d'une jauge sont hors limite" />
     <MESSAGE value="Modification de la classe Personnage ( et Question)  , de sorte qu'on puisse ajouter une infinité de jauges dans le futur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification de la classe Personnage ( et Question)  , de sorte qu'on puisse ajouter une infinité de jauges dans le futur" />
+    <MESSAGE value="Optimisation de la méthode Personnage.afficheJauge()" />
+    <MESSAGE value="Optimisation de la méthode Personnage.afficheJauge() , et Personnage.getJauge()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimisation de la méthode Personnage.afficheJauge() , et Personnage.getJauge()" />
   </component>
 </project>
