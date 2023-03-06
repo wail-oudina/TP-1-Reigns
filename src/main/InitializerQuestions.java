@@ -10,6 +10,7 @@ import com.google.gson.JsonObject;
 
 import java.io.FileReader;
 import java.io.Reader;
+import java.util.Map;
 
 
 public class InitializerQuestions {
@@ -20,10 +21,9 @@ public class InitializerQuestions {
             JsonElement jsonElement = gson.fromJson(reader, JsonElement.class);
 
             JsonObject jsonObject = jsonElement.getAsJsonObject();
-            String name = jsonObject.get("Name").getAsString();
-            int age = jsonObject.get("Age").getAsInt();
+            int age = jsonObject.get("Personne").getAsJsonObject().get("Info").getAsJsonObject().get("Age").getAsInt();
 
-            System.out.println("Name: " + name);
+
             System.out.println("Age: " + age);
         }
         catch (FileNotFoundException e) {
@@ -31,5 +31,12 @@ public class InitializerQuestions {
         }
 
     }
+    public String getNomPersonnage(JsonObject jsonQuestion ){
+        return jsonQuestion.get("NomPersonnage").getAsString();
+    }
+    public String getQuestion(JsonObject jsonQuestion){
+        return jsonQuestion.get("Question").getAsString();
+    }
+    public Map<DirectionEffet,String> getTexteEffets(JsonObject jsonQuestion){}
 
 }
