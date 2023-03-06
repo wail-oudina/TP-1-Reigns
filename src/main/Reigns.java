@@ -68,17 +68,8 @@ public class Reigns {
      * @param question La question à laquelle il faut répondre
      */
     private static void reponseQuestion(Question question){
-        question.afficheQuestion();
-        // récupère la réponse
-        Scanner scanner = new Scanner(System.in);
-        String reponse = "";
-        while(!reponse.equals("G") && !reponse.equals("D")){
-            System.out.println("Entrez la réponse (G ou D)");
-            System.out.flush();
-            reponse = scanner.nextLine();
-        }
-        // applique les effets de la réponse
-        question.appliqueEffets(personnage,reponse);
+        Reponse reponse = new Reponse(question,personnage);
+        reponse.derouler();
     }
 
     /**
