@@ -58,16 +58,16 @@ public class Effet {
     public void setValeur(int valeur) {
         this.valeur = valeur;
     }
-    private String afficheEffet() {
+    protected String afficheEffet() {
         String result = "; jauge "+type.toString()+" :";
         result += (valeur>0) ? " +" : "";
         result += valeur;
         return result;
     }
-    private void appliqueEffet(Personnage personnage){
+    protected void appliqueEffet(Personnage personnage){
         Jauge jauge = personnage.getJauge(type);
         jauge.setValeur(jauge.getValeur() + valeur);
-        return void;
+        return;
     }
 
 
