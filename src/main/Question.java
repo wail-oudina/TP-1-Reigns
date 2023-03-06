@@ -21,8 +21,7 @@ public class Question {
      */
     protected String question;
     protected Map<DirectionEffet,String> textesEffets;
-
-    protected List<Effet> effets;
+    protected List<List<Effet>> effetsParDirection;
 
 
     /**
@@ -37,14 +36,20 @@ public class Question {
         this.nomPersonnage = nomPersonnage;
         this.question = question;
         this.textesEffets = new TreeMap<>();
-        this.effets = new ArrayList<>();
+        this.effetsParDirection = new ArrayList<>();
+
+        for ( DirectionEffet direction : DirectionEffet.values() ) {
+            effetsParDirection.add(new ArrayList<>());
+        }
 
     }
 
     public void ajouteTexteEffet(DirectionEffet directionEffet,String texteEffet) {
         textesEffets.put(directionEffet,texteEffet);
     }
-
+    public void ajouteEffet(Effet effet){
+        effetsParDirection.get(effet.directionEffet.ordinal()).add(effet);
+    }
     /**
      * Affiche la question avec les effets associés aux choix gauche et droit.
      */
@@ -73,11 +78,10 @@ public class Question {
      */
     private String afficheEffets(DirectionEffet directionEffet) {
         StringBuilder result = new StringBuilder();
-        for (Effet effet : this.effets) {
-            if ( effet.directionEffet == directionEffet ){
-                result.append(effet.afficheEffet());
-            }
+        for ( Effet effet : effetsParDirection.get(directionEffet.ordinal()) ) {
+            result.append(effet.afficheEffet());
         }
+
         return result.toString();
 
     }
@@ -90,17 +94,13 @@ public class Question {
      * @param personnage le personnage sur lequel les effets doivent être appliqués
      */
     protected void appliqueEffets(Personnage personnage,String reponse){
-        for (Effet effet : this.effets) {
-            if ( effet.directionEffet.toString().equals(reponse)){
-                effet.appliqueEffet(personnage);
-            }
-
+        for (Effet effet : this.effetsParDirection.get(DirectionEffet.valueOf(reponse).ordinal())) {
+            effet.appliqueEffet(personnage);
         }
+
     }
 
-    public void ajouteEffet(Effet effet){
-        effets.add(effet);
-    }
+
 
 
 
