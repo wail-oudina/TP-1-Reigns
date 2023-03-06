@@ -1,6 +1,5 @@
 package main;
 
-import java.util.Map;
 
 public class Effet {
     /**
@@ -12,15 +11,19 @@ public class Effet {
      */
     protected int valeur;
 
+    DirectionEffet directionEffet;
+
     /**
      * Crée un nouvel effet avec le type et la valeur spécifiés.
      *
      * @param type Le type de la jauge
      * @param valeur La valeur de l'effet
      */
-    public Effet(TypeJauge type, int valeur){
+    public Effet(TypeJauge type, int valeur, DirectionEffet directionEffet){
         this.type = type;
         this.valeur = valeur;
+        this.directionEffet = directionEffet;
+
     }
 
     /**

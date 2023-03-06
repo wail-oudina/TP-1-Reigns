@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Ajout de la classe Effet">
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Modification de la classe Effet et adaptation de la classe Question par rapport aux modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Effet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Effet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678094756510</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modification de la classe Effet et adaptation de la classe Question par rapport aux modifications">
+      <created>1678095553836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678095553836</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +146,7 @@
     <MESSAGE value="Optimisation de la méthode Personnage.afficheJauge()" />
     <MESSAGE value="Optimisation de la méthode Personnage.afficheJauge() , et Personnage.getJauge()" />
     <MESSAGE value="Ajout de la classe Effet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe Effet" />
+    <MESSAGE value="Modification de la classe Effet et adaptation de la classe Question par rapport aux modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de la classe Effet et adaptation de la classe Question par rapport aux modifications" />
   </component>
 </project>

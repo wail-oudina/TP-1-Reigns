@@ -77,12 +77,8 @@ public class Reigns {
             System.out.flush();
             reponse = scanner.nextLine();
         }
-        // applique les malus
-        if(reponse.equals("G")){
-            question.appliqueEffetsGauche(personnage);
-        }else{
-            question.appliqueEffetsDroite(personnage);
-        }
+        // applique les effets de la réponse
+        question.appliqueEffets(personnage,reponse);
     }
 
     /**
@@ -115,14 +111,17 @@ public class Reigns {
         questions = new ArrayList<>();
         Question question1 = new Question(
                 "Main du roi",
-                "Le peuple souhaite libérer les prisonniers",
-                "Oui",
-                "Non");
-        question1.ajouteEffetGauche(TypeJauge.ARMEE, -5);
-        question1.ajouteEffetGauche(TypeJauge.PEUPLE, +5);
-        question1.ajouteEffetDroite(TypeJauge.PEUPLE, -7);
+                "Le peuple souhaite libérer les prisonniers");
+        question1.ajouteTexteEffet(DirectionEffet.G,"Oui");
+        question1.ajouteTexteEffet(DirectionEffet.D,"Non");
+
+
+        question1.ajouteEffet(new Effet(TypeJauge.ARMEE, -5,DirectionEffet.G));
+        question1.ajouteEffet(new Effet(TypeJauge.PEUPLE, +5,DirectionEffet.G));
+        question1.ajouteEffet(new Effet(TypeJauge.PEUPLE, -7,DirectionEffet.D));
+
         questions.add(question1);
-        Question question2 = new Question(
+        /*Question question2 = new Question(
                 "Paysan",
                 "Il n'y a plus rien à manger",
                 "Importer de la nourriture",
@@ -159,7 +158,7 @@ public class Reigns {
         question5.ajouteEffetGauche(TypeJauge.PEUPLE, -5);
         question5.ajouteEffetDroite(TypeJauge.FINANCE, +1);
         question5.ajouteEffetDroite(TypeJauge.PEUPLE, -3);
-        questions.add(question5);
+        questions.add(question5);*/
     }
 
     /**
