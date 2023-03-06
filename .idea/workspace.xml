@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Ajout d'un attribut directionEffet dans la classe Effet,&#10;ajout d'un Enum DirectionEffet&#10;ajout d'un methode Question.ajouteTexteEffet()&#10;adaptation du code dans Reigns.java">
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Effet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Effet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678104366595</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()">
+      <created>1678105684968</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678105684968</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +161,7 @@
     <MESSAGE value="Ajout de la classe Effet" />
     <MESSAGE value="Modification de la classe Effet et adaptation de la classe Question par rapport aux modifications" />
     <MESSAGE value="Ajout d'un attribut directionEffet dans la classe Effet,&#10;ajout d'un Enum DirectionEffet&#10;ajout d'un methode Question.ajouteTexteEffet()&#10;adaptation du code dans Reigns.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un attribut directionEffet dans la classe Effet,&#10;ajout d'un Enum DirectionEffet&#10;ajout d'un methode Question.ajouteTexteEffet()&#10;adaptation du code dans Reigns.java" />
+    <MESSAGE value="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amelioration d'affichage des questions ; &#10;Modification de la méthode Effet.afficheEffet()&#10;Modification de la méthode Question.afficheQuestion()" />
   </component>
 </project>

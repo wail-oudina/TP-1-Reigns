@@ -115,82 +115,12 @@ public class Question {
         }
     }
 
-
-
     public void ajouteEffet(Effet effet){
         effets.add(effet);
     }
 
-    /**
-     * Retourne le nom du personnage associé à la question.
-     *
-     * @return le nom du personnage associé à la question
-     */
-    public String getNomPersonnage() {
-        return nomPersonnage;
-    }
 
-    /**
-     * Modifie le nom du personnage associé à la question.
-     *
-     * @param nomPersonnage le nouveau nom du personnage associé à la question
-     */
-    public void setNomPersonnage(String nomPersonnage) {
-        this.nomPersonnage = nomPersonnage;
-    }
 
-    /**
-     * Retourne la question.
-     *
-     * @return la question
-     */
-    public String getQuestion() {
-        return question;
-    }
 
-    /**
-     * Modifie la question.
-     *
-     * @param question la nouvelle question
-     */
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
-    /**
-     * Retourne l'effet gauche de la question.
-     *
-     * @return l'effet gauche de la question.
-     */
-    public String getEffetGauche() {
-        return effetGauche;
-    }
-
-    /**
-     * Modifie l'effet gauche de la question.
-     *
-     * @param effetGauche le nouvel effet gauche de la question
-     */
-    public void setEffetGauche(String effetGauche) {
-        this.effetGauche = effetGauche;
-    }
-
-    /**
-     * Retourne l'effet droit de la question.
-     *
-     * @return l'effet droit de la question.
-     */
-    public String getEffetDroite() {
-        return effetDroite;
-    }
-
-    /**
-     * Modifie l'effet droit de la question.
-     *
-     * @param effetDroite le nouvel effet droit de la question
-     */
-    public void setEffetDroite(String effetDroite) {
-        this.effetDroite = effetDroite;
-    }
 
 }

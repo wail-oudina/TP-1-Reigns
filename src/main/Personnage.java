@@ -50,7 +50,7 @@ public class Personnage {
      */
     public void AfficheJauges() {
 
-        for ( Jauge jauge: jauges) {
+        for ( Jauge jauge: this.jauges) {
             afficheJauge(jauge);
         }
 

@@ -112,11 +112,11 @@ public class Reigns {
         Question question1 = new Question(
                 "Main du roi",
                 "Le peuple souhaite libérer les prisonniers");
-        question1.ajouteTexteEffet(DirectionEffet.G,"Oui");
-        question1.ajouteTexteEffet(DirectionEffet.D,"Non");
+        question1.ajouteTexteEffet(DirectionEffet.G, "Oui");
+        question1.ajouteTexteEffet(DirectionEffet.D, "Non");
 
 
-        question1.ajouteEffet(new Effet(TypeJauge.ARMEE, -5,DirectionEffet.G));
+        question1.ajouteEffet(new Effet(TypeJauge.ARMEE,  -5,DirectionEffet.G));
         question1.ajouteEffet(new Effet(TypeJauge.PEUPLE, +5,DirectionEffet.G));
         question1.ajouteEffet(new Effet(TypeJauge.PEUPLE, -7,DirectionEffet.D));
 
