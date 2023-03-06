@@ -72,8 +72,13 @@ public class Question {
             result += "["+rep.getKey()+": "+rep.getValue()+"]";
         }
 
-        System.out.println(result);
+        result += "\n";
 
+        for ( DirectionEffet direction : DirectionEffet.values() ) {
+            result += "Effet "+direction.toString()+" : "+ afficheEffets(direction)+"\n";
+        }
+
+        System.out.println(result);
         System.out.flush();
     }
 
@@ -83,11 +88,12 @@ public class Question {
 
      * @return la chaîne de caractères représentant les effets de la jauge
      */
-    private String afficheEffets() {
+    private String afficheEffets(DirectionEffet directionEffet) {
         StringBuilder result = new StringBuilder();
         for (Effet effet : this.effets) {
-            result.append(effet.afficheEffet());
-
+            if ( effet.directionEffet == directionEffet ){
+                result.append(effet.afficheEffet());
+            }
         }
         return result.toString();
 

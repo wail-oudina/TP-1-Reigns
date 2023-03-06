@@ -62,9 +62,10 @@ public class Effet {
         this.valeur = valeur;
     }
     protected String afficheEffet() {
-        String result = "; jauge "+type.toString()+" :";
-        result += (valeur>0) ? " +" : "";
+        String result = "Jauge "+type.toString()+" : ";
+        result += (valeur>0) ? "+" : "";
         result += valeur;
+        result += " ; ";
         return result;
     }
     protected void appliqueEffet(Personnage personnage){
