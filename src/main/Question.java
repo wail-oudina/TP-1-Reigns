@@ -55,16 +55,11 @@ public class Question {
      */
     public void afficheQuestion() {
         String result = "["+nomPersonnage+"] "
-                + question;
-        for ( Map.Entry<DirectionEffet,String> rep : textesEffets.entrySet()) {
-            result += "["+rep.getKey()+": "+rep.getValue()+"]";
-        }
-
-        result += "\n";
+                + question + "\n";
 
         for ( DirectionEffet direction : DirectionEffet.values() ) {
             if ( effetsParDirection.get(direction.ordinal()).size() > 0){
-                result += "Effet "+direction.label+" : "+ afficheEffets(direction)+"\n";
+                result += "["+ direction.toString() +"] "  + textesEffets.get(direction)+" : "+ afficheEffets(direction)+"\n";
             }
 
         }
