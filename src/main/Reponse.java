@@ -16,7 +16,16 @@ public class Reponse {
         Scanner scanner = new Scanner(System.in);
         String reponse = "";
         while(!reponseValide(reponse)){
-            System.out.println("Entrez une réponse valide" + Arrays.toString(DirectionEffet.values()));
+            String choixValides = "";
+            for ( DirectionEffet direction : DirectionEffet.values() ) {
+                if ( question.effetsParDirection.get(direction.ordinal()).size() > 0){
+                    choixValides += direction.toString() + " - ";
+                }
+
+            }
+            choixValides += "]";
+
+            System.out.println("Entrez une réponse valide : " + choixValides);
 
             System.out.flush();
             reponse = scanner.nextLine();
