@@ -1,6 +1,6 @@
 # Reigns
 
-Dans ce dépôt, vous trouverez une (BONNE) implémentation du jeu REIGNS. 
+Dans ce dépôt, vous trouverez une **(BONNE)** implémentation du jeu REIGNS. 
 
 ## Qu'est-ce que Reigns ?
 
