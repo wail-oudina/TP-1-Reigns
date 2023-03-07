@@ -23,19 +23,28 @@ public class InitializerQuestions {
         this.nomFichier = NomFichier;
     }
     public ArrayList<Question> initQuestions(){
+        JsonArray jsonQuestions = getJsonQuestions();
+
         ArrayList<Question> questions = new ArrayList<>();
-        JsonArray jsonQuestions = getJsonQuestions(this.nomFichier);
+
         for ( int i=0 ; i<jsonQuestions.size() ; i++){
             JsonObject jsonQuestion = jsonQuestions.get(i).getAsJsonObject();
             String nomPersonnage = getNomPersonnage(jsonQuestion);
             String questiontxt = getQuestion(jsonQuestion);
-            Map<DirectionEffet,String> texteEffets = getTexteEffets(jsonQuestion);
 
+
+            Map<DirectionEffet,String> texteEffets = getTexteEffets(jsonQuestion);
+            ArrayList<Effet> effets = getEffets(jsonQuestion);
 
 
             Question question = new Question(nomPersonnage,questiontxt);
 
-            ArrayList<Effet> effets = getEffets(jsonQuestion);
+            for (Map.Entry<DirectionEffet,String> rep : texteEffets.entrySet()) {
+                question.ajouteTexteEffet(rep.getKey(),rep.getValue());
+            }
+
+
+
 
             for ( Effet effet : effets){
                 question.ajouteEffet(effet);
@@ -46,9 +55,9 @@ public class InitializerQuestions {
         return questions;
     }
 
-    public JsonArray getJsonQuestions(String NomFichier){
+    public JsonArray getJsonQuestions(){
         try {
-            Reader reader = new FileReader(NomFichier);
+            Reader reader = new FileReader(this.nomFichier);
             Gson gson = new Gson();
             JsonElement jsonElement = gson.fromJson(reader, JsonElement.class);
             JsonArray jsonQuestions = jsonElement.getAsJsonArray();
@@ -81,13 +90,13 @@ public class InitializerQuestions {
     public ArrayList<Effet> getEffets(JsonObject jsonQuestion){
 
         ArrayList<Effet> finalList = new ArrayList<>();
-        JsonArray jsonEffetsArray = jsonQuestion.getAsJsonArray("Effets");
+        JsonArray jsonEffetsArray = jsonQuestion.get("Effets").getAsJsonArray();
         for (int i=0 ; i<jsonEffetsArray.size() ; i++){
 
         JsonObject jsonEffet = jsonEffetsArray.get(i).getAsJsonObject();
         TypeJauge typeJauge = TypeJauge.valueOf(jsonEffet.get("TypeJauge").getAsString());
         int valeur = jsonEffet.get("Valeur").getAsInt();
-        DirectionEffet directionEffet = DirectionEffet.valueOf(jsonEffet.get("DirectionEffet").getAsString());
+        DirectionEffet directionEffet = DirectionEffet.valueOf(jsonEffet.get("Direction").getAsString());
         Effet effet = new Effet(typeJauge,valeur,directionEffet);
         finalList.add(effet);
         }

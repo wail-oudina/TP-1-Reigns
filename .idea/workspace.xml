@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Ajout d'une nouvelle direction pour test">
-      <change afterPath="$PROJECT_DIR$/jars/gson-2.8.2.jar" afterDir="false" />
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="implémentation complète de la classe InitializerQuestions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP-1-Reigns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP-1-Reigns.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/InitializerQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/InitializerQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678115197960</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="implémentation complète de la classe InitializerQuestions">
+      <created>1678195146789</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678195146789</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +221,8 @@
     <MESSAGE value="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)" />
     <MESSAGE value="Changement de l'enum Genre  (ajout d'un label)" />
     <MESSAGE value="Ajout d'une nouvelle direction pour test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une nouvelle direction pour test" />
+    <MESSAGE value="implémentation complète de la classe InitializerQuestions" />
+    <option name="LAST_COMMIT_MESSAGE" value="implémentation complète de la classe InitializerQuestions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
