@@ -100,7 +100,7 @@ public class Reigns {
      * Cette fonction initialise la banque de questions. Elle crée les questions et les ajoute à la banque.
      */
     private static void initBanqueQuestions(){
-        InitializerQuestions initializerQuestions = new InitializerQuestions("test.json");
+        InitializerQuestions initializerQuestions = new InitializerQuestions("questions.json");
         questions = initializerQuestions.initQuestions();
     }
 
