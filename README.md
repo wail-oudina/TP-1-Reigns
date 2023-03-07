@@ -1,10 +1,10 @@
 # Reigns
 
-Dans ce dépôt, vous trouverez une (mauvaise) implémentation du jeu REIGNS. 
+Dans ce dépôt, vous trouverez une (BONNE) implémentation du jeu REIGNS. 
 
 ## Qu'est-ce que Reigns ?
 
-Dans le jeu Reigns, vous incarnez un roi ou une reine qui possède 4 jauges d’appréciation : 
+Dans le jeu Reigns, vous incarnez un roi ou une reine (ou autre !)  qui possède 4 jauges d’appréciation : 
 * le clergé
 * le peuple
 * l'armée
