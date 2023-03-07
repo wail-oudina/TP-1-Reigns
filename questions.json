@@ -29,6 +29,173 @@
         "Direction": "D"
       }
     ]
+  },
+  {
+    "NomPersonnage": "Paysan",
+    "Question": "Il n'y a plus rien à manger",
+    "Reponse": [
+      {
+        "TexteEffet": "Importer de la nourriture",
+        "DirectionEffet": "G"
+      },
+      {
+        "TexteEffet": "Ne rien faire",
+        "DirectionEffet": "D"
+      }
+    ],
+    "Effets": [
+      {
+        "TypeJauge": "FINANCE",
+        "Valeur": -5,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": 5,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": -5,
+        "Direction": "D"
+      }
+    ]
+  },
+  {
+    "NomPersonnage": "Prêtre",
+    "Question": "Les dieux sont en colère",
+    "Reponse": [
+      {
+        "TexteEffet": "Faire un sacrifice",
+        "DirectionEffet": "G"
+      },
+      {
+        "TexteEffet": "Ne rien faire",
+        "DirectionEffet": "D"
+      }
+    ],
+    "Effets": [
+      {
+        "TypeJauge": "CLERGE",
+        "Valeur": 5,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": -3,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "CLERGE",
+        "Valeur": -5,
+        "Direction": "D"
+      }
+    ]
+  },
+  {
+    "NomPersonnage": "Soldat",
+    "Question": "Les ennemis sont à nos portes",
+    "Reponse": [
+      {
+        "TexteEffet": "Faire appel à l'armée",
+        "DirectionEffet": "G"
+      },
+      {
+        "TexteEffet": "Ne rien faire",
+        "DirectionEffet": "D"
+      }
+    ],
+    "Effets": [
+      {
+        "TypeJauge": "ARMEE",
+        "Valeur": 5,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": -5,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "ARMEE",
+        "Valeur": -5,
+        "Direction": "D"
+      }
+    ]
+  },
+  {
+    "NomPersonnage": "Main du roi",
+    "Question": "Le roi Baratheon rassemble son armée",
+    "Reponse": [
+      {
+        "TexteEffet": "Le soutenir",
+        "DirectionEffet": "G"
+      },
+      {
+        "TexteEffet": "Rester neutre",
+        "DirectionEffet": "D"
+      }
+    ],
+    "Effets": [
+      {
+        "TypeJauge": "ARMEE",
+        "Valeur": 3,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "FINANCE",
+        "Valeur": -3,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "CLERGE",
+        "Valeur": -3,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": 3,
+        "Direction": "D"
+      }
 
+    ]
+
+  },
+  {
+    "NomPersonnage": "Paysan",
+    "Question": "Abondance de récoltes cette année",
+    "Reponse": [
+      {
+        "TexteEffet": "Taxer énormément",
+        "DirectionEffet": "G"
+      },
+      {
+        "TexteEffet": "Taxer un tout petit peu",
+        "DirectionEffet": "D"
+      }
+    ],
+    "Effets": [
+      {
+        "TypeJauge": "FINANCE",
+        "Valeur": 10,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": -5,
+        "Direction": "G"
+      },
+      {
+        "TypeJauge": "FINANCE",
+        "Valeur": 1,
+        "Direction": "D"
+      },
+      {
+        "TypeJauge": "PEUPLE",
+        "Valeur": -3,
+        "Direction": "D"
+      }
+    ]
   }
+
 ]
