@@ -63,7 +63,10 @@ public class Question {
         result += "\n";
 
         for ( DirectionEffet direction : DirectionEffet.values() ) {
-            result += "Effet "+direction.label+" : "+ afficheEffets(direction)+"\n";
+            if ( effetsParDirection.get(direction.ordinal()).size() > 0){
+                result += "Effet "+direction.label+" : "+ afficheEffets(direction)+"\n";
+            }
+
         }
 
         System.out.println(result);
