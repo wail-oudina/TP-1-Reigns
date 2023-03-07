@@ -1,6 +1,5 @@
 package main;
 
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -80,15 +79,14 @@ public class Reigns {
 
     private static void initPersonnage(){
         Scanner scanner = new Scanner(System.in);
-        String nbgenre = "";
         System.out.println("Entrez le nom du personnage: ");
         System.out.flush();
         String nom = scanner.nextLine();
 
 
-        String choixGenre = "";
+        StringBuilder choixGenre = new StringBuilder();
         for (Genre genre : Genre.values()) {
-            choixGenre += genre.label + " [" + ((int)(genre.ordinal())+1) + "] ";
+            choixGenre.append(genre.label).append(" [").append((genre.ordinal()) + 1).append("] ");
         }
         System.out.println(
                 "Comment faut-il vous appeler ?" + choixGenre);
