@@ -18,7 +18,7 @@ public enum Genre {
     /**
      * Pas de genres
      */
-    AUTRE("Non-Binaire");
+    AUTRE("à la Royauté");
 
     private String label;
     Genre(String label){
