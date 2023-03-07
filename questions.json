@@ -2,10 +2,16 @@
   {
     "NomPersonnage": "Main du roi",
     "Question": "Le peuple souhaite libérer les prisonniers",
-    "Reponse": [{
-      "G":"Oui",
-      "D": "Non"
-    }],
+    "Reponse": [
+      {
+      "TexteEffet": "Oui",
+      "DirectionEffet": "G"
+      },
+      {
+      "TexteEffet": "Non",
+      "DirectionEffet": "D"
+      }
+    ],
     "Effets": [
       {
         "TypeJauge": "ARMEE",
@@ -24,6 +30,5 @@
       }
     ]
 
-    }
   }
 ]
