@@ -84,7 +84,8 @@ public class Reigns {
         System.out.println("Entrez le nom du personnage: ");
         System.out.flush();
         String nom = scanner.nextLine();
-        int i = 0;
+
+
         String choixGenre = "";
         for (Genre genre : Genre.values()) {
             choixGenre += genre.label + " [" + ((int)(genre.ordinal())+1) + "] ";
