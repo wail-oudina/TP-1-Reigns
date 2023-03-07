@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="implémentation complète de la classe InitializerQuestions">
+    <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/InitializerQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/InitializerQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/DirectionEffet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DirectionEffet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Genre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +36,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="advanced.settings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Wail\Desktop\TP-Reigns\jars" />
-    </key>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/Developpement/JAVA/tp-reigns"
+  }
+}]]></component>
   <component name="RunManager" selected="Application.Reigns">
     <configuration name="Reigns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Reigns" />
@@ -170,28 +169,7 @@
       <option name="project" value="LOCAL" />
       <updated>1678110288834</updated>
     </task>
-    <task id="LOCAL-00013" summary="Changement de l'enum Genre  (ajout d'un label)">
-      <created>1678112554278</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1678112554278</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Ajout d'une nouvelle direction pour test">
-      <created>1678115197960</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1678115197960</updated>
-    </task>
-    <task id="LOCAL-00015" summary="implémentation complète de la classe InitializerQuestions">
-      <created>1678195146789</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1678195146789</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,13 +197,6 @@
     <MESSAGE value="Ajout de la classe Reponse" />
     <MESSAGE value="Ajout de labels dans les Enums , pour faciliter l'affichage" />
     <MESSAGE value="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)" />
-    <MESSAGE value="Changement de l'enum Genre  (ajout d'un label)" />
-    <MESSAGE value="Ajout d'une nouvelle direction pour test" />
-    <MESSAGE value="implémentation complète de la classe InitializerQuestions" />
-    <option name="LAST_COMMIT_MESSAGE" value="implémentation complète de la classe InitializerQuestions" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)" />
   </component>
 </project>

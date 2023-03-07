@@ -80,20 +80,17 @@ public class Reigns {
 
     private static void initPersonnage(){
         Scanner scanner = new Scanner(System.in);
+        String nbgenre = "";
         System.out.println("Entrez le nom du personnage: ");
         System.out.flush();
         String nom = scanner.nextLine();
+        int i = 0;
         System.out.println(
-                "Faut-il vous appeler Roi ou Reine ? (1 pour Roi, 2 pour Reine)");
-        int genre = scanner.nextInt();
-        Genre roiReine;
-        if(genre==1){
-            roiReine = Genre.ROI;
-        }else{
-            roiReine = Genre.REINE;
-        }
+                "Comment faut-il vous appeler ?" + nbgenre);
+        int genre = scanner.nextInt()-1;
+        Genre roiReine = Genre.values()[genre];
+        Reigns.personnage = new Personnage(nom, roiReine);
 
-        Reigns.personnage = new Personnage(nom,roiReine);
     }
 
     /**

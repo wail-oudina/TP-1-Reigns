@@ -14,7 +14,11 @@ public enum Genre {
     /**
      * Genre féminin
      */
-    REINE("à la Reine");
+    REINE("à la Reine"),
+    /**
+     * Pas de genres
+     */
+    AUTRE("Non-Binaire");
 
     private String label;
     Genre(String label){
