@@ -38,7 +38,7 @@ public class Personnage {
         this.genre = genre;
         this.jauges = new ArrayList<>();
         for ( int i = 0 ; i < TypeJauge.values().length;i++){
-            Jauge j = new Jauge(TypeJauge.values()[i].label,  15 + (int)(Math.random() * (35 - 15)) );
+            Jauge j = new Jauge(TypeJauge.values()[i].label,  15 + (int)(Math.random() * (35 - 15)), 50 );
             j.setType(TypeJauge.values()[i]);
             this.jauges.add( j );
         }
@@ -79,18 +79,21 @@ public class Personnage {
      * @param jauge La jauge à afficher
      */
     private void afficheJauge(Jauge jauge) {
-        StringBuilder resultat = new StringBuilder("[");
         // valeur : ####
-        for(int i=0;i<jauge.getValeur();i++){
-            resultat.append("#");
-        }
-        // on complète avec ____
-        for(int i = 0; i<50-(Math.max(jauge.getValeur(), 0)); i++){
-            resultat.append("_");
-        }
-        resultat.append("] ");
-        // affichage du nom
-        resultat.append(jauge.getNom());
+
+        String resultat = "[" + "#".repeat(Math.max(0, jauge.getValeur())) +
+                // on complète avec ____
+                "_".repeat(Math.max(0, jauge.valeur_max - (Math.max(jauge.getValeur(), 0)))) +
+                "] " +
+                // affichage de la valeur de la jauge
+                "[" +
+                jauge.getValeur() +
+                "/" +
+                jauge.valeur_max +
+                "] " +
+
+                // affichage du nom
+                jauge.getNom();
         System.out.println(resultat);
     }
 
@@ -134,9 +137,6 @@ public class Personnage {
             }
         }
         return null;
-    }
-    public void setJauge(TypeJauge type,Jauge jauge){
-
     }
 
 }

@@ -20,15 +20,18 @@ public class Jauge {
      */
     protected int valeur;
 
+    protected int valeur_max;
+
     /**
      * Crée une nouvelle jauge avec le nom et la valeur spécifiés.
      *
      * @param nom Le nom de la jauge
      * @param valeur La valeur de la jauge
      */
-    public Jauge(String nom, int valeur){
+    public Jauge(String nom, int valeur, int valeur_max){
         this.nom = nom;
         this.valeur = valeur;
+        this.valeur_max = valeur_max;
     }
 
     /**
@@ -86,6 +89,6 @@ public class Jauge {
     }
 
     public boolean valeurHorsLimite(){
-        return (this.getValeur()<=0 || this.getValeur()>=50);
+        return (this.getValeur()<=0 || this.getValeur()>=this.valeur_max);
     }
 }
