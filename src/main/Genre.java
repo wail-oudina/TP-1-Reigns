@@ -10,19 +10,21 @@ public enum Genre {
     /**
      * Genre masculin
      */
-    ROI("au Roi"),
+    ROI("Roi","au Roi"),
     /**
      * Genre féminin
      */
-    REINE("à la Reine"),
+    REINE("Reine","à la Reine"),
     /**
      * Pas de genres
      */
-    AUTRE("à la Royauté");
+    AUTRE("Non genré","à la Royauté");
 
-    private String label;
-    Genre(String label){
+    public String label;
+    public String pronom;
+    Genre(String label,String pronom){
         this.label = label;
+        this.pronom = pronom;
     }
 
     /**
@@ -31,6 +33,6 @@ public enum Genre {
      * @return une chaîne de caractères indiquant "Long règne au roi" ou "Long règne à la reine"
      */
     public String longRegne(){
-        return "Long règne "+label;
+        return "Long règne "+pronom;
     }
 }

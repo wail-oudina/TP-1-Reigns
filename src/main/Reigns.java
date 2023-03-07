@@ -85,8 +85,12 @@ public class Reigns {
         System.out.flush();
         String nom = scanner.nextLine();
         int i = 0;
+        String choixGenre = "";
+        for (Genre genre : Genre.values()) {
+            choixGenre += genre.label + " [" + ((int)(genre.ordinal())+1) + "] ";
+        }
         System.out.println(
-                "Comment faut-il vous appeler ? (1 = roi, 2 = reine, 3 = Non-genré");
+                "Comment faut-il vous appeler ?" + choixGenre);
         int genre = scanner.nextInt()-1;
         Genre roiReine = Genre.values()[genre];
         Reigns.personnage = new Personnage(nom, roiReine);
