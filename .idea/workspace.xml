@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e158a1a-5df0-4baf-8107-6e571ac3dc1c" name="Changes" comment="Adaptation de l'affichage avec les enums ,&#10;+ suppression de quelques attributs obsolètes ( non utilisables)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/DirectionEffet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DirectionEffet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Genre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Reigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Reigns.java" afterDir="false" />
     </list>
@@ -35,6 +36,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/Developpement/JAVA/tp-reigns"
+  }
+}]]></component>
   <component name="RunManager" selected="Application.Reigns">
     <configuration name="Reigns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Reigns" />
@@ -175,7 +182,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout fonction qui verifie si les valeurs d'une jauge sont hors limite" />
